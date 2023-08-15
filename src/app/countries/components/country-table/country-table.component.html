@@ -1,4 +1,4 @@
-<div *ngIf="countries.length === 0; else table" class="alert alert-warning text-center">
+<div *ngIf="countries.length === 0; else table" class="alert text-center">
   No hay paises que mostrar
 </div>
 
@@ -22,7 +22,7 @@
         <td>{{ country.name.common }}</td>
         <td>{{ country.capital }}</td>
         <td>{{ country.population | number }}</td>
-        <td><a [routerLink]="['/countries/by', country.cca3]">Ver más</a></td>
+        <td class="link-cell"><a [routerLink]="['/countries/by', country.cca3]">Ver más</a></td>
       </tr>
     </tbody>
   </table>

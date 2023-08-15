@@ -3,13 +3,14 @@
 
 <div class="row">
   <div class="col">
-    <shared-search-bar placeholder="Busqueda por Capital" (onValue)="searchByCapital($event)"></shared-search-bar>
+    <shared-search-bar placeholder="Busqueda por Capital" (onDebounce)="searchByCapital($event)" [initialValue]="initialValue"></shared-search-bar>
   </div>
 </div>
 
 <div class="row">
   <div class="col">
     <hr>
+    <shared-loading-component *ngIf="isLoading"></shared-loading-component>
     <countries-table [countries]="countries"></countries-table>
   </div>
 </div>

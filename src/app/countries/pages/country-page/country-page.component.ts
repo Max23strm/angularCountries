@@ -8,6 +8,12 @@ import { Country } from '../../interfaces/countery';
   selector: 'app-country-page',
   templateUrl: './country-page.component.html',
   styles: [
+    'h2 { color: #262729; font-weight: 600  }',
+    'h3 { color: #262729; font-weight: 600  }',
+    '.list-group-item { background-color:#262729; color: #e6e4e5 ;border-color : #e6e4e5}',
+    '.list-group { background-color:#262729; color: #e6e4e5 ;border-color : #e6e4e5}',
+    '.img-thumbnail { background-color:#262729; color: #e6e4e5 ;border-color : #e6e4e5}',
+    '.badge { background-color:#262729; color: #e6e4e5 ;border-color : #e6e4e5}',
   ]
 })
 export class CountryPageComponent implements OnInit {
